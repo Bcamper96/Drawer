@@ -1,0 +1,11 @@
+.btn{
+    margin: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    background: #636363;
+}
+.btn:hover {
+    background: rgb(43, 43, 43);
+    color: white;
+}

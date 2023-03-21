@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/homepage.css">
+<script src="/js/homepage.js" defer></script>
+
+<script>
+    const publicImages = {{{ stringify publicImages }}}
+</script>
+
+<div id="hero">
+  <a href="/draw">
+    <h1> Drawer</h1> 
+    <img src="/assets/lc-images/logo.png"> 
+  </a>
+</div> 
+
+<div id="others">
+  <p1>Or see what people have made:</p1>
+</div>
+
+<div id="pictures">
+  {{#each publicImages as |image|}}
+    <div data-img-id="{{ image.dataValues.id }}">
+      <a href="/images/{{ image.dataValues.id }}"><p>{{ image.dataValues.title }}</p></a>
+    </div>
+  {{/each}}
+</div>

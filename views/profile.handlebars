@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/profile.css">
+<script src="/js/profile.js" defer></script>
+
+<script>
+    const userImages = {{{ stringify userImages }}}
+</script>
+
+<h1>My Drawings</h1> 
+<div id="pictures"> 
+  {{#each userImages as |image|}}
+    <div data-img-id="{{ image.dataValues.id }}">
+      <a href="/images/{{ image.dataValues.id }}"><p>{{ image.dataValues.title }}</p></a>
+    </div>
+  {{/each}}
+</div>

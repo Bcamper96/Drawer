@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawer</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link href="/css/literallycanvas.css" rel="stylesheet">
+  <script src="/js/jquery-1.8.2.js"></script>
+  {{#if loggedIn}}
+  <script src="/js/logout.js" defer></script>
+  {{/if}}
+  
+  <script src="/js/react-0.14.3.js" defer></script>
+  <script src="/js/literallycanvas.js" defer></script>
+</head>
+
+<body>
+    <nav>
+      <link rel="stylesheet" href="/css/main.css">
+      <a href="/"><button class="btn" id="gallery">Home</button></a>
+      <a href="/profile"><button class="btn" id="gallery">My Gallery</button></a>
+    {{#if loggedIn}}
+      <button class="btn" id="logout">Logout</button>
+    {{else}}
+      <a href="/login"><button class="btn" id="login">Login / Sign Up</button></a>
+    {{/if}}
+    </nav>
+  <main class="container-fluid mt-5">
+    {{{ body }}}
+  </main>
+</body>
+
+</html>
+

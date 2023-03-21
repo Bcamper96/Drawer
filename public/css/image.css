@@ -1,0 +1,14 @@
+.image-container canvas {
+    border: 5px solid #515151;
+    background-color: white;
+    width: 750px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h5 {
+    text-align: center;
+}
